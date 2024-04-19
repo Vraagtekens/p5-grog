@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(60, 60, 60);
+    padding-top: 10px;
+}
+
+.frame-box{
+    /* height: 700px; */
+    margin-top: 10px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sketch */
+#frame{
+    width: 600px;
+    height: 400px;
+
+    display: block;
+    margin: auto;
+    
+    /* transition: width 0.5s ease, height 0.5s ease;  */
+}
+
+
+
+/* sketch */
+#frame canvas{
+    border-radius: 5px;
+}
+
+canvas {
+    box-shadow: 5px 5px 40px 1px rgba(1, 1, 1, 0.5);
+    border-radius: 5px;
+    /* background: rgba(1, 1, 1, 0.0); */
+}
+
+.frame-footer-box{
+    display: block;
+    margin: auto;
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+    width: 600px; /* Width of the container */
+    padding: 5px;
+}
+.frame-footer{
+    display: flex;
+    justify-content: space-between; /* Center horizontally */
+    align-items: center;
+    width: 100%; /* Take up full width of the container */
+}
+
+
+@media only screen and (max-width: 610px){
+    #frame {
+        width: 400px;
+        height: 600px;
+    }
+    .frame-footer-box{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 399px){
+    #frame{
+        width: 260px;
+        height: 400px;
+    } 
+
+    .frame-footer-box{
+        width: 260px;
+    }
+}

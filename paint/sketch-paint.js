@@ -22,8 +22,6 @@ function setup(){
 }
 
 function draw(){
-
-
     if(mouseIsPressed){
         // screen.strokeWeight(8);
         // screen.stroke(0);
@@ -67,6 +65,7 @@ function drawScreen(){
 function windowResized() {
     // console.log(width);
     // console.log(windowWidth);
+    screen.remove();
 
     if(windowWidth <= 610){
         screen = createGraphics(windowWidth, windowHeight);
